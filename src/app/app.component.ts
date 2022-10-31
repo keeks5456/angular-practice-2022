@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
 //Class
 export class AppComponent {
   title: string = 'angular-practice-2022';
-  
+  hasError: boolean = false 
+  highlightColor: string = "orange"
+  titleStyles = {
+    color: 'blue',
+    fontStyle: 'italic'
+  }
 }
