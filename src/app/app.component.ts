@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 })
 //Class
 export class AppComponent {
-  title = 'angular-practice-2022';
+  title: string = 'angular-practice-2022';
+  
 }

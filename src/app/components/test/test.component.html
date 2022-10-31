@@ -1,1 +1,7 @@
-<h1>Hello From Test</h1>
+<h1 class="text-success">Hello From Test</h1>
+<h3 [class]="successClass">Hello,{{name}}</h3>
+<input  [id]="myId" type="text" value="Akiko"/>
+<input bind-disabled="isDisabled"  id="{{myId}}" type="text" value="Akiko"/>
+<h2 class="text-danger" [class]="successClass">Life</h2>
+<h2 [class.text-danger]="hasError">Life</h2>
+<h2 [ngClass]="messageClasses">Life</h2>
