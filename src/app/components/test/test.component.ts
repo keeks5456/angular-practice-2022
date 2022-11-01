@@ -18,9 +18,17 @@ export class TestComponent implements OnInit {
     "text-danger":this.hasError,
     "text-special": this.isSpecial
   }
+
+  public greeting: string = ''
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick(event){
+    console.log(event)
+    this.greeting = "greetings"
+
   }
 
 }
