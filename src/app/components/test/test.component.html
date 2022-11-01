@@ -2,6 +2,9 @@
 <h3 [class]="successClass">Hello,{{name}}</h3>
 <button (click)="onClick($event)">Greet</button>
 {{greeting}}
+<br>
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>
 <!-- <br /> -->
 <!-- <input  [id]="myId" type="text" value="Akiko"/>
 <input bind-disabled="isDisabled"  id="{{myId}}" type="text" value="Akiko"/>

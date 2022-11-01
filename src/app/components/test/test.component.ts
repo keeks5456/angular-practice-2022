@@ -19,7 +19,9 @@ export class TestComponent implements OnInit {
     "text-special": this.isSpecial
   }
 
-  public greeting: string = ''
+  greeting: string = ''
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -31,4 +33,11 @@ export class TestComponent implements OnInit {
 
   }
 
-}
+  logMessage(value){
+    console.log(value)
+    return value
+  }
+
+
+
+} //end
