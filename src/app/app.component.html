@@ -5,13 +5,17 @@
     <h3 [style.color]="highlightColor">Style Binding</h3>
     <h3 [ngStyle]="titleStyles">Style Binding</h3>
   -->
-  <app-test (childEvent)="message=$event" [parentData]="name"></app-test>
-  <h2>{{message}}</h2>
+  <!-- here is how we send data to and from children  -->
+  <!-- <app-test (childEvent)="message=$event" [parentData]="name"></app-test>
+  <h2>{{message}}</h2> -->
+  <!-- end -->
   <!-- <div class="app-test"></div>  -->
   <!-- style binding -->
   <!-- <app-binding></app-binding> -->
   <!-- <app-structural-directives></app-structural-directives> -->
 
+  <!-- pipes -->
+  <app-pipes></app-pipes>
 
 
 </div>

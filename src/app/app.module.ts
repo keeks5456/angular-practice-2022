@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './components/test/test.component';
 import { BindingComponent } from './components/binding/binding.component';
 import { StructuralDirectivesComponent } from './components/structural-directives/structural-directives.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   //whenever an app is generated, it will be populated here
@@ -13,6 +14,7 @@ import { StructuralDirectivesComponent } from './components/structural-directive
     TestComponent,
     BindingComponent,
     StructuralDirectivesComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule,
