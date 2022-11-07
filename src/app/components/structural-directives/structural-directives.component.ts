@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuralDirectivesComponent implements OnInit {
 
-  color: string = "orange"
+  colors = ["orange", 'red', 'green', 'yellow']
   constructor() { }
 
   ngOnInit(): void {
