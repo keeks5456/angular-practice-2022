@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 //Class
 export class AppComponent {
+
   title: string = 'angular-practice-2022';
   hasError: boolean = false 
   highlightColor: string = "orange"
@@ -15,4 +16,7 @@ export class AppComponent {
     color: 'blue',
     fontStyle: 'italic'
   }
+  name: string = "akiko"
+  message = ""
+
 }

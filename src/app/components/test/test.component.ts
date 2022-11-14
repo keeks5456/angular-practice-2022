@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  name: string = "Akiko"
+  // @Input("parentData") name;
+  @Input() parentData; //from parent
+  @Output() childEvent = new EventEmitter() //output to parent
+
+
+
   myId: string = "testId"
   isDisabled: boolean = true
   successClass: string = "text-success"
@@ -36,6 +41,10 @@ export class TestComponent implements OnInit {
   logMessage(value){
     console.log(value)
     return value
+  }
+
+  fireEvent(){
+    this.childEvent.emit("Hello from child")
   }
 
 
