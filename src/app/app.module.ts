@@ -9,6 +9,8 @@ import { StructuralDirectivesComponent } from './components/structural-directive
 import { PipesComponent } from './components/pipes/pipes.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './components/employee-detail/employee-detail.component';
+import {HttpClientModule} from '@angular/common/http'
+
 
 @NgModule({
   //whenever an app is generated, it will be populated here
@@ -23,7 +25,8 @@ import { EmployeeDetailComponent } from './components/employee-detail/employee-d
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
